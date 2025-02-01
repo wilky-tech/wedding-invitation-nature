@@ -8,6 +8,7 @@
   --biru: #38587c;
   --orencream: #e0b27e;
   --font: #fff;
+  --background-color: rgba(236, 240, 241, 0.7);
 }
 
 @import url("https://fonts.cdnfonts.com/css/uvf-aphrodite-pro");
@@ -163,6 +164,10 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.hero-container .save {
+  font-family: "UVF Aphrodite Pro", sans-serif;
+}
+
 .area-1 {
   position: relative;
   width: 80%;
@@ -202,30 +207,120 @@ body {
 }
 
 .home-container-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-1 {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  position: relative;
+  margin: 10px;
+  width: 85px;
+  min-height: 100vh;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}
+
+.container-1 h1 {
+  writing-mode: sideways-lr;
+  font-size: 2rem;
+}
+
+.home-container-2 {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
-  padding-left: 2rem;
+  background-color: var(--background-color);
 }
 
-.photo-container-1 {
-  display: flex;
-  width: 170px;
-  height: 250px;
-  border: 7px solid var(--ijo);
-  border-radius: 60px;
+.container-2 { 
+  background-color: var(--background-color);
+  position: relative;
+  width: 260px;
+  margin: 10px;
+  height: 110px;
   box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+
+.container-2 h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.3rem;
+}
+
+.container-2 p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.container-3 {
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+  height: 430px;
+  width: 260px;
+} 
+
+.container-3 .photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 300px;
+  border: 7px solid var(--ijo);
+  border-radius: 50px;
   overflow: hidden;
 }
 
-.photo-container-1 img {
+.container-3 .photo-container img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.home-container-1 h1 {
+.container-3 h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 0.2rem;
+  margin: 0;
+}
+
+.container-3 p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container-3 .bi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5 auto;
+  padding: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.container-3 a {
+  text-decoration: none;
+}
+
+.container-3 .bi:hover {
+  color: var(--pink);
+}
+
+/* .home-container-1 h1 {
   font-size: 2rem;
   margin: 0 auto;
   text-align: center;
@@ -244,7 +339,7 @@ body {
   font: 1rem;
   text-align: center;
   margin: 0.5rem auto;
-}
+} */
 
 /* Galeri */
 #galeri {
@@ -261,18 +356,24 @@ body {
 }
 
 .galeri {
-  display: block;
-  position: relative;
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   padding: 0;
-  max-width: 800px;
+  margin: 0;
 }
 
 .galeri img {
-  width: 150px;
-  height: 150px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;  
   object-fit: cover;
-  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+
+.galeri img:hover {
+  transform: scale(1.05);
 }
 
 /* Story */
