@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  min-height: 4000px;
+  min-height: 6000px;
 }
 
 /* PopUp */
@@ -227,7 +227,7 @@ body {
 
 .container-1 h1 {
   writing-mode: sideways-lr;
-  font-size: 2rem;
+  font-size: 2rem;;
 }
 
 .home-container-2 {
@@ -235,7 +235,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 
 .container-2 { 
@@ -320,28 +320,128 @@ body {
   color: var(--pink);
 }
 
-/* .home-container-1 h1 {
+/* Surat */
+#surat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.surat {
+  background-color: #c7cccc;
+}
+
+.surat p {
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid var(--background-color);
+  padding: 5px 5px;
+  margin: 10px 10px;
+  font-weight: 100;
+}
+
+/* Section Akad */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: auto;
+}
+
+.acara-1 {
+  margin: 20px auto;
+}
+
+.acara-2 {
+  margin: 20px auto;
+}
+
+.box-1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px 0 0 0 ;
+  overflow: hidden;  
+}
+
+.box-1 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.box-2 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+}
+
+
+.detail-1 .akad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 300px;
+  background-color: var(--font);
+}
+
+.detail-1 {
+  display: flex;
+}
+
+.detail-2 {
+  text-align: center;
+  background-color: var(--font);
+}
+
+.vertical-line {
+  width: 5px;
+  height: 300px;
+  background: #000;
+}
+
+.line {
+  margin: auto;
+  padding-left: 100px;
+  width: 40px;
+  height: 2.5px;
+  background: #000;
+}
+
+.box-2 .detail-1 h1 {
+  writing-mode: sideways-lr;
   font-size: 2rem;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 auto;
 }
 
-.home-container-1 h4 {
-  width: 150px;
-  font-size: 1rem;
-  margin: 0.5rem auto;
-  text-align: center;
+.detail-2 .rabu {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 400;
 }
 
-.home-container-1 p {
-  width: 150px;
-  font: 1rem;
-  text-align: center;
-  margin: 0.5rem auto;
-} */
+.detail-2 .tgl {
+  font-size: 3rem;
+  margin: 0.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
 
-/* Galeri */
+.detail-2 .bulan {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.detail-2 p {
+  font-size: 19px;
+}
+
+/* Galeri
 #galeri {
   background-image: url(./img/bg-galeri.png);
   background-position: center;
@@ -374,7 +474,7 @@ body {
 
 .galeri img:hover {
   transform: scale(1.05);
-}
+} */
 
 /* Story */
 /* #story {
