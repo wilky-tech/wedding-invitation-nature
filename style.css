@@ -18,7 +18,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  min-height: 6000px;
 }
 
 /* PopUp */
@@ -135,68 +134,6 @@ body {
   color: var(--font);
 }
 
-#hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-#hero {
-  background-image: url(./img/foto-halaman2.png);
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
-}
-
-.hero-container {
-  display: block;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-container h1 {
-  top: 0;
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.hero-container .save {
-  font-family: "UVF Aphrodite Pro", sans-serif;
-}
-
-.area-1 {
-  position: relative;
-  width: 80%;
-  height: 250px;
-  background-color: rgba(236, 240, 241, 0.5);
-  border-radius: 40px;
-  margin: 2rem 2rem;
-  color: var(--font);
-}
-
-.area-1 h1 {
-  padding-top: 2.5rem;
-  font-size: 2rem;
-  margin: 1rem auto 1rem;
-  text-align: center;
-}
-
-.area-1 h2 {
-  font-size: 1.5rem;
-  margin: 1rem auto 1rem;
-  text-align: center;
-}
-
-.area-1 h4 {
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 0.5rem auto 0.5rem;
-}
-
 /* Home Mempelai*/
 #home {
   background-image: url("./img/foto-halaman1.png");
@@ -217,9 +154,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
-  position: relative;
   margin: 10px;
-  width: 85px;
+  width: 50px;
   min-height: 100vh;
   box-shadow: var(--shadow);
   border-radius: 20px;
@@ -240,7 +176,6 @@ body {
 
 .container-2 { 
   background-color: var(--background-color);
-  position: relative;
   width: 260px;
   margin: 10px;
   height: 110px;
@@ -263,7 +198,6 @@ body {
 
 .container-3 {
   justify-content: center;
-  position: relative;
   margin: 10px;
   height: 430px;
   width: 260px;
@@ -306,10 +240,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.5 auto;
-  padding: 0;
+  margin: auto;
   cursor: pointer;
   color: black;
+  margin-top: 0.5rem;
 }
 
 .container-3 a {
@@ -341,13 +275,20 @@ body {
 }
 
 /* Section Akad */
+
+#hero {
+  background-image: url(./img/foto-halaman1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  height: auto;
 }
 
 .acara-1 {
@@ -363,6 +304,7 @@ body {
   height: 300px;
   border-radius: 150px 0 0 0 ;
   overflow: hidden;  
+  box-shadow: var(--shadow);
 }
 
 .box-1 img {
@@ -373,12 +315,13 @@ body {
 
 .box-2 {
   width: 300px;
-  height: 300px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 0 30px 30px;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 
@@ -387,7 +330,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100px;
-  height: 300px;
+  height: 320px;
   background-color: var(--font);
 }
 
@@ -402,7 +345,7 @@ body {
 
 .vertical-line {
   width: 5px;
-  height: 300px;
+  height: 100%;
   background: #000;
 }
 
@@ -439,60 +382,123 @@ body {
 
 .detail-2 p {
   font-size: 19px;
+  margin: 0.5rem auto 0.7rem;
 }
 
-/* Galeri
-#galeri {
-  background-image: url(./img/bg-galeri.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+.box-3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 0 150px 0 0 ;
+  overflow: hidden;  
+  box-shadow: var(--shadow);
 }
 
-#galeri {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.box-3 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
-.galeri {
+.acara-2 .box-2 a {
+  width: 100px;
+  height: 50px;
+  background-color: var(--ijo);
+  margin: 0.5rem auto 1.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.acara-2 .box-2 a:hover {
+  background-color: var(--cream);
+}
+
+.acara-1 .box-2 a {
+  width: 100px;
+  height: 50px;
+  background-color: var(--ijo);
+  margin: 0.5rem auto 1.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.acara-1 .box-2 a:hover {
+  background-color: var(--cream);
+}
+
+
+/* Galeri */
+#galeri h1 {
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "UVF Aphrodite Pro", sans-serif;
+  margin: 0 auto;
+}
+
+.galeri-container {
+  width: 100%;
+  margin: 0;
+}
+
+.galeri-container .img1 {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  padding: 0;
+}
+.galeri-container .img2 {
+  width: 50%;
+  height: 100%;
+  float: right;
   margin: 0;
 }
-
-.galeri img {
-  padding: 0;
+.galeri-container .img3 {
+  width: 50%;
+  height: 100%;
   margin: 0;
-  width: 100%;
-  height: 100%;  
-  object-fit: cover;
-  transition: 300ms ease-in-out;
 }
-
-.galeri img:hover {
-  transform: scale(1.05);
-} */
-
 /* Story */
-/* #story {
-  background-image: url("./img/foto-halaman3.png"); 
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  padding-top: 0;
-} */
-
-/* .story-box {
-  background-color: rgba(236, 240, 241  , 0.5);
-  opacity: 50%;
-  width: 80%;
+#story {
+  background-color: var(--background-color);
 }
 
-.story-box h1 {
+#story .judul-love-story {
+  background-color: var(--background-color);
   text-align: center;
-  
-} */
+  font-size: 2.5rem;
+  font-family: "UVF Aphrodite Pro", sans-serif;
+  margin: 0 auto;
+}
+
+.story-container .img-kiri {
+  width: 35%;
+  height: 100%;
+  margin: 1.5rem auto;
+  margin-left: 1.5rem;
+  border: 7px double var(--ijo);
+  border-radius: 0 120px 0 70px ;
+}
+.story-container .img-kanan {
+  width: 35%;
+  height: 100%;
+  margin: 1.5rem auto;
+  margin-right: 1.5rem;
+  border: 7px double var(--ijo);
+  float: right;
+  border-radius: 120px 0 70px 0;
+}
+
+.story-text h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "UVF Aphrodite Pro", sans-serif;
+  margin: 0.5rem auto;
+}
+
+.story-text p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto 1rem 3rem;
+}
