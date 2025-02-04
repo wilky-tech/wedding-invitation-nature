@@ -12,10 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+     <!-- Swiper -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -143,8 +147,12 @@
     <!-- Section Start -->
     <section id="hero">
       <div class="acara-1">
-        <div class="box-1">
-          <img src="./img/foto-cowo.png" alt="foto-cowo" />
+        <div class="swiper box-1">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/foto-cewe.png" alt="foto-1"></div>
+              <div class="swiper-slide"><img src="img/foto-cowo.png" alt="foto-2"></div>
+              <div class="swiper-slide"><img src="img/foto-cewe.png" alt="foto-3"></div>
+          </div>
         </div>
         <div class="box-2">
           <div class="detail-1">
@@ -170,8 +178,12 @@
         </div>
       </div>
       <div class="acara-2">
-        <div class="box-3">
-          <img src="./img/foto-cewe.png" alt="foto-cowo" />
+        <div class="swiper box-3">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/foto-cewe.png" alt="foto-1"></div>
+              <div class="swiper-slide"><img src="img/foto-cowo.png" alt="foto-2"></div>
+              <div class="swiper-slide"><img src="img/foto-cewe.png" alt="foto-3"></div>
+          </div>
         </div>
         <div class="box-2">
           <div class="detail-1">
@@ -266,5 +278,6 @@
         },
       });
     </script>
+   <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
