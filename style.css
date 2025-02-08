@@ -15,6 +15,7 @@
 
 @import url("https://fonts.cdnfonts.com/css/boheme-floral");
 
+html, 
 body {
   font-family: "Times New Roman", serif;
   margin: 0;
@@ -30,7 +31,7 @@ body {
 }
 
 .popup-container {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -50,8 +51,9 @@ body {
 }
 
 .popup-content h2 {
-  padding-top: 2rem;
-  font-size: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
   font-family: "Times New Roman", serif;
   font-weight: 400;
   color: var(--font);
@@ -63,6 +65,7 @@ body {
   font-family: "UVF Aphrodite Pro", sans-serif;
   font-weight: 500;
   color: var(--font);
+  padding-bottom: 2rem;
 }
 
 .popup-content p {
@@ -73,8 +76,9 @@ body {
 }
 
 .popup-content .kepada {
-  padding-top: 20rem;
+  padding-top: 21rem;
   color: var(--bg);
+  padding-bottom: 1rem;
 }
 
 .enter-btn {
@@ -114,9 +118,9 @@ body {
   font-size: 2.6rem;
   font-family: "UVF Aphrodite Pro", sans-serif;
   color: var(--font);
-  padding-top: 0rem;
+  padding-top: 5rem;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 1.5rem;
   font-weight: 500;
 }
 
@@ -128,6 +132,7 @@ body {
   justify-content: center;
   margin: 0;
   color: var(--font);
+  padding-bottom: 5rem;
 }
 
 /* Home Mempelai*/
@@ -151,11 +156,14 @@ body {
   box-shadow: var(--shadow);
   border-radius: 20px;
   float: right;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .container-2 .detail-container-2 h1 {
   writing-mode: sideways-lr;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .container-2 {
@@ -205,13 +213,13 @@ body {
   text-align: center;
   font-size: 2rem;
   padding: 0 0.2rem;
-  margin: 0;
+  margin: 0.5rem;
 }
 
 .container-3 p {
   font-size: 1.2rem;
   text-align: center;
-  margin: 0;
+  margin: 0.5rem;
 }
 
 .container-3 .ig {
@@ -313,6 +321,7 @@ body {
   justify-content: center;
   width: 100px;
   background-color: var(--font);
+  padding: 1rem;
 }
 
 .detail-1 {
@@ -358,12 +367,13 @@ body {
 
 .detail-2 .bulan {
   font-size: 1.3rem;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .detail-2 p {
   font-size: 19px;
   margin: 0.5rem auto 0.7rem;
+  margin: 1rem;
 }
 
 .box-3 {
@@ -423,6 +433,7 @@ body {
   font-size: 2.5rem;
   font-family: "UVF Aphrodite Pro", sans-serif;
   margin: 0 auto;
+  padding: 2.2rem;
 }
 
 .galeri-container {
@@ -456,6 +467,7 @@ body {
   font-size: 2.5rem;
   font-family: "UVF Aphrodite Pro", sans-serif;
   margin: 0 auto;
+  padding: 2.2rem;
 }
 
 .story-container .img-kiri {
@@ -480,7 +492,8 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-family: "UVF Aphrodite Pro", sans-serif;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 1.2rem;
+  font-size: 1.8rem;
 }
 
 .story-text p {
@@ -488,6 +501,7 @@ body {
   text-align: center;
   margin: auto 1.5rem;
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 /* Wedding Gifts */
@@ -498,13 +512,23 @@ body {
   justify-content: center;
   width: 100%;
   background-color: var(--background-color);
+  padding-bottom: 2rem;
 }
 
 .gift h1 {
   margin: 0 auto;
   padding: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   text-align: center;
+  font-size: 3rem;
+}
+
+.gift .ket-gift {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 .gift p {
@@ -512,6 +536,8 @@ body {
   text-align: center;
   padding: 2rem;
   padding-top: 0;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .box-atm-1 {
@@ -541,6 +567,7 @@ body {
 
 .box-atm-1 .nama {
   font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .box-atm-1 .btn {
@@ -567,7 +594,9 @@ body {
 #rsvp {
   width: 100%;
   display: flex;
-  margin: 3rem auto;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;    
 }
 
 .komen-container {
@@ -592,46 +621,59 @@ body {
   margin: auto 1rem 2rem;
 }
 
-.form-group label {
-  display: block;
-  justify-content: center;
-  margin: 5px auto;
-  width: 80%;
-}
-
-.form-group input,
-textarea {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  padding: 14px;
-  border-radius: 10px;
-  margin: 1rem auto;
-  font-size: 1rem;
-}
-
-.form-group textarea {
-  resize: none;
-}
-
-.form-group select {
-  display: block;
-  margin: 1rem auto;
-  width: 85%;
-  padding: 14px;
-  border-radius: 10px;
-}
-
-.rsvp .btn-submit {
+.row {
   display: block;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  padding: 15px;
-  border-radius: 10px;
-  margin-left: 2rem;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.row .box-komen {
+  display: block;
+  width: 100%;
+}
+
+
+.form-label {
+  width: 100%;
+  display: block;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  padding: 0;
+  padding-bottom: 0.5rem;
+  margin: auto ;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto 0.5rem;
+}
+
+.form-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin: 0.5rem auto 1rem;
+  border-radius: 10px;
+}
+
+.row .btn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.row .btn:hover {
+  background-color: var(--ijo);
 }
 
 /* Closing */
@@ -718,4 +760,51 @@ footer {
 .social-icons img {
   width: 30px;
   height: 30px;
+}
+
+
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }

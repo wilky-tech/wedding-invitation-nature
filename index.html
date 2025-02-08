@@ -51,7 +51,7 @@
           Kepada Yth. <br />
           Bapak/Ibu/Saudara/i :
         </p>
-        <button class="enter-btn">
+        <button class="enter-btn" onclick="enableScroll()">
           <i class="bi bi-envelope-open-heart"></i>
           Open Invitation
         </button>
@@ -63,7 +63,6 @@
     <section id="main-content">
       <div class="main-content">
         <div class="hero-content">
-          <!-- <h2>The Wedding Of</h2> -->
           <h1>Najib & Nelsy</h1>
           <p>22 Oktober 25</p>
           <div
@@ -264,7 +263,7 @@
     <!-- Wedding Gift -->
     <section id="gift" class="gift">
       <h1>Wedding Gifts</h1>
-      <p>
+      <p class="ket-gift">
         Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadiah pernikahan dapat
         melalui Virtual Account atau e-wallet di bawah ini :
       </p>
@@ -305,25 +304,33 @@
           Berikan ucapan dan doa terbaik untuk kedua mempelai
         </p>
 
-        <form id="comment-form" method="POST">
-          <div class="form-group">
-            <label for="name">Nama :</label>
-            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+        <form class="row row-cols-md-auto align-items-center justify-content-center" method="POST" 
+        action="https://script.google.com/macros/s/AKfycbwwveaROk6b64hNtigSEwLU9XyTZTuSorvbteygh47dOIGmBkUZabpFJWLfQA9EI9YA/exec" id="my-form">
+          <div class="col-12">
+            <div class="box-komen mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="name">Komentar :</label>
-            <textarea id="comment" name="comment" placeholder="Tulis komentar atau Doa Anda di sini" required></textarea>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="Komentar" class="form-label">Komentar</label>
+              <input type="text" class="form-control" id="nama" name="komentar">
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="attendance_status">Status Kehadiran:</label>
-            <select id="attendance_status" name="attendance_status" required>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
           </div>
-          <button type="submit" class="btn-submit">Kirim</button>
+          <div class="col-12">
+            <button class="btn">Kirim</button>
+          </div>
         </form>
       </div>
     </section>
@@ -371,6 +378,7 @@
         }, 1000);
       }
     </script> -->
+
     <!-- Simply Countdown -->
     <script>
       simplyCountdown(".simply-countdown", {
@@ -387,6 +395,54 @@
         },
       });
     </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+         window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+         }
+      }
+
+      
+      rootElement.style.scrollBehavior = "auto"
+
+      function enableScroll(){
+        window.onscroll = function() {
+          rootElement.style.scrollBehavior = "smooth"
+        }
+        document.getElementById("popup").classList.add("fade-out");
+      }
+
+      disableScroll();
+    </script>
+
+
+    <!-- pop up database daftar tamu -->
+    <script>
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi Kehadiran Berhasil!");
+    })
+  });
+});
+
+</script>
+<!-- pop up database daftar tamu -->
+
     <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
