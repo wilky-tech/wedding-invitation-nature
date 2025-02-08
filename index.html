@@ -51,7 +51,7 @@
           Kepada Yth. <br />
           Bapak/Ibu/Saudara/i :
         </p>
-        <button class="enter-btn" onclick="closePopup()">
+        <button class="enter-btn">
           <i class="bi bi-envelope-open-heart"></i>
           Open Invitation
         </button>
@@ -277,8 +277,6 @@
         <button
           class="btn"
           data-nomer="123456789"
-          onclick="util.salin(this)"
-          autofocus
         >
           <i class="bi bi-copy"></i> Salin No. Rekening
         </button>
@@ -292,8 +290,6 @@
         <button
           class="btn"
           data-nomer="123456789"
-          onclick="util.salin(this)"
-          autofocus
         >
           <i class="bi bi-copy"></i> Salin No. Rekening
         </button>
@@ -367,14 +363,14 @@
      </footer>
     <!-- Footer End -->
 
-    <script>
+    <!-- <script>
       function closePopup() {
         document.getElementById("popup").classList.add("fade-out");
         setTimeout(() => {
           document.getElementById("popup").style.display = "none";
         }, 1000);
       }
-    </script>
+    </script> -->
     <!-- Simply Countdown -->
     <script>
       simplyCountdown(".simply-countdown", {
