@@ -370,6 +370,18 @@
      </footer>
     <!-- Footer End -->
 
+     <!-- Audio -->
+      <div id="audio-container">
+        <audio id="song" autoplay loop>
+          <source src="./audio/All of Me - John Legend - Violin and Guitar Cover - Daniel Jang (mp3cut.net).m4a">
+        </audio>
+
+        <div class="audio-icon-wrapper">
+          <i class="bi bi-disc"></i>
+        </div>
+      </div>
+     <!-- Audio End -->
+
     <!-- <script>
       function closePopup() {
         document.getElementById("popup").classList.add("fade-out");
@@ -398,6 +410,10 @@
 
     <script>
       const rootElement = document.querySelector(":root");
+      const song = document.querySelector("#song");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper")
+      const audioIcon = document.querySelector(".audio-icon-wrapper i")
+      let isPlaying = false;
 
       function disableScroll() {
          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -408,6 +424,8 @@
          }
       }
 
+      disableScroll();
+
       
       rootElement.style.scrollBehavior = "auto"
 
@@ -416,9 +434,28 @@
           rootElement.style.scrollBehavior = "smooth"
         }
         document.getElementById("popup").classList.add("fade-out");
+        playAudio();
       }
 
-      disableScroll();
+      function playAudio() {
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function(){
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play()
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying
+      }
+
     </script>
 
 
