@@ -562,7 +562,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .box-atm-1 .nama {
@@ -570,7 +570,7 @@ body {
   line-height: 2.5rem;
 }
 
-.box-atm-1 .btn {
+.box-atm-1 .btns {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -583,10 +583,11 @@ body {
 }
 
 .box-atm-1 .bi {
-  margin: auto 0.3rem;
+  margin: auto;
+  margin-right: 6px;
 }
 
-.box-atm-1 .btn:hover {
+.box-atm-1 .btns:hover {
   background-color: var(--ijo);
 }
 
