@@ -25,7 +25,7 @@ body {
 
 /* PopUp */
 .popup-container {
-  background-image: url(./img/cover-popup.png);
+  background-image: url(./img/cover-pop-up.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -100,7 +100,7 @@ body {
 
 /* Hero */
 #main-content {
-  background-image: url(./img/cover-popup.png);
+  background-image: url(./img/cover-halaman-awal.jpg);
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -138,7 +138,7 @@ body {
 
 /* Home Mempelai*/
 #home {
-  background-image: url("./img/foto-halaman1.png");
+  background-image: url("./img/foto-bg-fixed.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -269,7 +269,7 @@ body {
 /* Section Akad */
 
 #hero {
-  background-image: url(./img/foto-halaman1.png);
+  background-image: url(./img/foto-bg-fixed.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
