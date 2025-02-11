@@ -51,7 +51,7 @@ body {
 }
 
 .popup-content h2 {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   font-size: 1.5rem;
   font-family: "Times New Roman", serif;
@@ -70,15 +70,17 @@ body {
 }
 
 .popup-content p {
-  margin-top: 0;
+  margin: 18rem auto 0;
   font-size: 1rem;
   font-family: "Times New Roman", serif;
   color: var(--font);
+  mix-blend-mode: difference;
 }
 
 .popup-content .kepada {
-  padding-top: 21rem;
-  color: var(--bg);
+  margin: 0 auto 0;
+  padding-top: 1rem;
+  color: black;
   padding-bottom: 1rem;
 }
 
@@ -118,11 +120,12 @@ body {
   text-align: center;
   font-size: 2.6rem;
   font-family: "UVF Aphrodite Pro", sans-serif;
-  color: var(--font);
+  color: black;
   padding-top: 5rem;
   margin-bottom: 0;
   padding-bottom: 1.5rem;
   font-weight: 500;
+  margin-top: 23rem;
 }
 
 .hero-content p {
@@ -132,7 +135,7 @@ body {
   text-align: center;
   justify-content: center;
   margin: 0;
-  color: var(--font);
+  color: black;
   padding-bottom: 5rem;
 }
 
